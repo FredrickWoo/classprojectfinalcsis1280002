@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-size: 30px;
+    text-align: center;
+    
+  }
+body{
+    background-color: antiquewhite;
+}
+
+.body3{
+    padding-top: 20px;
+    padding-bottom:50px;
+}
+footer{
+    padding-top:25px;
+    padding-bottom: 25px;
+    background-color: rgb(236, 137, 80);
+    text-align: center;
+    color: white;
+}
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    background-color: rgb(197, 86, 22);
+    color: white;
+    text-align: left;
+    padding: 15px;
+    padding-left: 50px;
+    font-size:55px;
+}
+h2{
+    background-color: rgb(236, 137, 80);
+    text-align: center;
+    color: white;
+    padding:8px;
+    padding-left:50px;
+    font-size: 35px;
+}
+.Aboutus-Parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    height: 100%;
+    padding:15px;
+    grid-template-areas: "Aboutus-Image Aboutus-Body"
+                         "Aboutus-Body2 Aboutus-Image2"
+                         "Aboutus-Image3 Aboutus-Body3";
+}
+.lst1-Parent,.lst2-Parent,.lst3-Parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:2fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    height: 100%;
+    grid-template-areas: "Aboutus-Image Aboutus-Body";
+}
+.Aboutus-Image,.lst1-Image,.lst2-Image,.lst3-Image{
+    grid-area: Aboutus-Image;
+}
+#aboutus-img,#lst1-img,#aboutus-img2,#aboutus-img3,#lst2-img,#lst3-img{
+    max-width: 75%;
+    max-height: 75%;
+    width:auto;
+    height:auto;
+}
+.Aboutus-Body,.lst1-Body,.lst2-Body,.lst3-Body{
+    grid-area: Aboutus-Body;
+    padding: 15px;
+}
+.Aboutus-Body2{
+    grid-area:Aboutus-Body2;
+}
+.Aboutus-Body3{
+    grid-area:Aboutus-Body3;
+}
+.Nav{
+    background-color: rgb(148, 68, 21);
+    padding-left:75px;
+    padding-right:75px;
+    text-align: left;
+}
+#homepgbtn,#aboutusbtn,#contactusbtn{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding-right: 20px;
+    font-size:15px;
+    cursor:pointer;
+}
+#whisky1,#whisky2,#whisky3{
+    cursor:pointer;
+    max-width: 75%;
+    max-height: 75%;
+    width:auto;
+    height:auto;
+}
+.container1,.container2,.container3 {
+    position: relative;
+    width: auto;
+  }
+  
+.container1:hover .overlay ,.container2:hover .overlay ,.container3:hover .overlay {
+    opacity: .75;
+  }
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15%;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    opacity: 0;
+    color: white;
+    transition: .5s ease;
+    background-color: rgb(197, 86, 22);
+  }
+h4{
+    padding-top:25px;
+    font-size: 100px;
+    background-color: rgb(148, 68, 21);
+    
+}
+h3{
+    font-size: 45px;
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.slideshowContainer {
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+  }
+
+  .slides {
+    display: none;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .prev, .next {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+  } 
+  
+@media only screen and (min-width: 800px) {
+    body{
+        background-color: rgb(243, 207, 160);
+    }
+    
+    .body2{
+        padding-left: 20%;
+        padding-right: 20%;
+        background-clip: content-box;
+        background-color: antiquewhite;
+    }
+    #homepgbtn,#aboutusbtn,#contactusbtn{
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        padding-right: 35px;
+        font-size:25px;
+        cursor:pointer;
+    }
+    h1{
+        font-size:75px;
+    }
+    h2{
+        font-size: 55px;
+    }
+  }
