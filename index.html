@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Whisky Store</title>
+</head>
+<body>
+    
+    <h1>Whisky Store 
+        <div class="Nav" header>
+        <input type="button" id="homepgbtn" value="Home Page">
+        <input type="button" id="aboutusbtn" value="About Us">
+        <input type="button" id="contactusbtn" value="Contact Us">
+    </div></h1>
+    <h2>Whisky Selection</h2>
+    <div class = body2>
+        <div class = body3>
+            <div class = "options">
+                <div class="slideshowContainer">
+
+                    <div class="slides">
+                        <a href="listing1.html">
+                            <div class="container1">
+                                <img id = "whisky1" src="img/wsky_1.png" alt="whisky 1">
+                                <div class="overlay">
+                                    <h4>Whisky 1</h4> <br> 
+                                    <h3>A rare islay from the lorem ipsum region on the island of Islay in Scotland.</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="slides">
+                        <a href="listing2.html">
+                            <div class="container2">
+                                <img id = "whisky2" src="img/wsky_2.png" alt="whisky 2">
+                                <div class="overlay">
+                                    <h4>Whisky 2</h4> <br> 
+                                    <h3>A bourbon aged for 5 years in the heart of Kentucky right by the city of Lorem Ipsum.</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="slides">
+                        <a href="listing3.html">
+                            <div class="container3">    
+                                <img id = "whisky3" src="img/wsky_3.png" alt="whisky 3">
+                                <div class="overlay">
+                                    <h4>Whisky 3</h4> <br> 
+                                    <h3>A fine japanese whisky finished in a mizunara cask in Lorem City of Ipsum Prefecture.</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="prev" onclick="changeSlides(-1)">&#8656;</a>
+                    <a class="next" onclick="changeSlides(1)">&#8658;</a>
+                </div>
+                
+                  <div style="text-align:center">
+                    <span class="dot" onclick="displaySlide(1)"></span>
+                    <span class="dot" onclick="displaySlide(2)"></span>
+                    <span class="dot" onclick="displaySlide(3)"></span>
+                  </div>
+            
+            
+            
+            </div>
+        </div>
+    </div>
+</body>
+<footer>Copyright information <br> Group Members
+</footer>
+</html>
